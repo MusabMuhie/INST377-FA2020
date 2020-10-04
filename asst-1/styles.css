@@ -12,5 +12,54 @@ html, body {
     width: 70%;
     min-width: 800px;
     margin: 0 auto;
-    background-color: #6091C3;
+    background-color: #edf1f5;
   }
+
+  h1, h2, h3{
+    font-family: 'Merriweather', serif ;
+    color: blueviolet;
+  }
+  
+  p, input, li {
+    font-family: 'Merriweather', serif ;
+    color: rgb(19, 15, 22);
+  }
+
+  .header{
+    background: #8734ca60;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 15px;
+  }
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container{
+    max-width: 960px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .one{
+    flex: 0 1 auto;
+    width: 175px;
+    margin-right: 15px;
+  }
+ .two{
+   flex:0 2 auto;
+   border-radius: 4px;
+   background: #f0f0f0;
+   padding: 15px;
+   border: dashed 1px #d47f35;
+ }
