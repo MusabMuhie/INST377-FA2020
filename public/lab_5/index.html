@@ -65,15 +65,13 @@ function testFunction() {
     .then((response) => response.text())
     .then((response) => {
          console.log(response);
-         
-
+         document.querySelector("h1").textContent= response;
+         document.querySelector("title").textContent= response;
+         document.querySelector("body").style.backgroundColor= "rgb(125, 12, 11)";
+         document.querySelector("h1").textContent= response;
+         document.querySelector(".flex-outer").style.margin = "0 auto";
     })
-    document.querySelector("h1").textContent= response;
-    document.querySelector("title").textContent= response;
-    document.querySelector("body").style.backgroundColor= "rgb(125, 12, 11)";
-    document.querySelector("h1").textContent= response;
-    document.querySelector(".flex-outer").style.margin = "0 auto";
-         
+    
 }
 
 </script>
