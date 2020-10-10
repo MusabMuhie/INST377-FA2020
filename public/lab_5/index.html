@@ -67,13 +67,21 @@ function testFunction() {
          console.log(response);
          document.querySelector("h1").textContent= response;
          document.querySelector("title").textContent= response;
-         document.querySelector("body").style.backgroundColor= "rgb(125, 12, 11)";
+         document.querySelector("body").style.backgroundColor= "rgb(110, 12, 11)";
          document.querySelector("h1").textContent= response;
          document.querySelector(".flex-outer").style.margin = "0 auto";
+         document.querySelector(".checkbox-list-label").textContent= "fruit";
+         const elements =document.querySelectorAll('.flex-inner li label')
+         const fruitArray = ['Apple', 'Watermelon', 'Mango']
+         elements.forEach((el, i) => {
+             const text = el.innerText;
+             console.log(text);
+             el.innerText=fruitArray[i];
+         })
     })
     
 }
-
+const myFunc= () =>{}
 </script>
  
  </body>
