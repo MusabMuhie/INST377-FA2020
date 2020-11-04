@@ -1,10 +1,32 @@
 function convertRestaurantsToCategories(restaurantList) {
   // process your restaurants here!
-  return list;
+  return restaurantList.reduce((collection, item, i)=>{
+    const categ = collection.find((f)=> f.label=== item.category);
+    if (!categ)
+    collection.push({
+      label: item.category,y:1
+    });
+    else{
+      categ.y +=1;
+    }
+    return collection;
+  },[]) 
 }
 
 function makeYourOptionsObject(datapointsFromRestaurantsList) {
   // set your chart configuration here!
+  return{
+    animationEnabled: true,
+    colorSet: 'miscAdobe',
+    title: {
+      text: 'Places To Eat Out in Future'
+    },
+    axisX:{
+      interval: 1,
+      labelFontSize: 12
+    }
+  } 
+
   CanvasJS.addColorSet('customColorSet1', [
     // add an array of colors here https://canvasjs.com/docs/charts/chart-options/colorset/
   ]);
